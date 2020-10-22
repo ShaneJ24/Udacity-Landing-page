@@ -17,9 +17,24 @@
  * Define Global Variables
  * 
 */
-const section1 = document.getElementById("sectionOne");
-const section2 = document.getElementById("sectionTwo");
-const section3 = document.getElementById("sectionThree");
+const navbarMenu = document.getElementById("navbar__list");
+//select sections
+const sections = document.querySelectorAll("section");
+//build a nav
+function createNav(){
+  for (let item of sections){
+    let section = document.createElement("li");
+    section.className = "menu__link";
+    section.innerText = item.dataset.nav;
+    navbarMenu.appendChild(section);
+    
+  };  
+};
+createNav();
+
+const section1 = document.getElementsByClassName("firstSection");
+const section2 = document.getElementsByClassName("secondSection");
+const section3 = document.getElementsByClassName("thirdSection");
 
 /**
  * End Global Variables
