@@ -80,16 +80,12 @@ section {
     padding-right: 10px;
 }
 
-.navbar__menu li:hover {
-    color: red;
-}
-
 .navbar__menu .menu__link {
-    display: block;
+    display: inline-block;
     padding: 1em;
     font-weight: bold;
     text-decoration: none;
-    color: #000;
+    color:white;
 }
 
 .navbar__menu .menu__link:hover {
